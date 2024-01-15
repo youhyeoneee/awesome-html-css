@@ -104,19 +104,26 @@
                 </legend>
                 <label for="name">
                     이름 :
-                    <input type="text">
+                    <input type="text" id="name" required="required" placeholder="your name">
+                    <span class="validity"></span>
                 </label><br><br>
                 <label for="email">
                     이메일 :
-                    <input type="email">
+                    <input
+                        type="email"
+                        id="email"
+                        pattern=".+@.+\.com"
+                        size="30"
+                        placeholder="example@example.com"
+                        required="required">
                 </label><br><br>
                 <label for="bitrhday">
                     생일 :
-                    <input type="date">
+                    <input type="date" id="bitrhday">
                 </label><br><br>
-                <label for="link">
+                <label for="sns">
                     SNS :
-                    <input type="url">
+                    <input type="url" id="sns" placeholder="https://www.instagram.com/">
                 </label><br><br>
                 <input type="submit" value="Submit">
 
