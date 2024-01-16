@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            HTML/CSS
+        </title>
+    </head>
+
+    <body>
+        <h1 style="color: pink;">
+            안녕하세요 김유현입니다
+        </h1>
+
+        <h2>
+            반갑습니당 :)</h2>
+
+        <details>
+            <summary>
+                이 페이지를 보시면..
+            </summary>
+            <p>
+                저에 대한 정보를 대략(?) 알 수 있습니다 ㅎ</p>
+        </details>
+        <p>
+            <img src="images/me.jpeg" alt="프로필 사진" width="100%"/>
+        </p>
+
+        <hr>
+
+        <h2>
+            저의 반려동물들을 소개합니다~!
+        </h2>
+        <ul>
+            <li>
+                <figure>
+                    <img src="images/dog.jpeg" alt="강아지 사진" width="50%"/>
+                    <figcaption> 김꿍디, 12세</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/cat.jpeg" alt="강아지 사진" width="50%"/>
+                    <figcaption> 김애호박, 5세</figcaption>
+                </figure>
+            </li>
+        </ul>
+        <hr>
+
+        <h2>
+            블로그에 놀러와주세요 ~
+        </h2>
+        <iframe src="https://velog.io/@youhyeoneee/posts" width="100%" height="300"></iframe>
+
+        인스타, 깃허브도 있습니다 ㅎ.ㅎ
+        <ul>
+            <li>
+                <a href="https://www.instagram.com/you_hyeoneee/">
+                    인스타
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/youhyeoneee">깃허브 링크</a>
+            </li>
+        </ul>
+
+        <hr>
+
+        <h2>
+            내가 생각하는 나의
+            <mark>
+                HTML</mark>
+            /
+            <mark>CSS</mark>
+            숙련도 (?)
+        </h2>
+
+        <label for="html">
+            HTML :
+        </label>
+        <progress id="html" value="32" max="100"></progress>
+
+        <br>
+
+        <label for="css">
+            CSS :
+        </label>
+        <progress id="css" value="10" max="100"></progress>
+
+        <hr>
+
+        <h3>
+            여기까지 와주신 당신에게
+        </h3>
+
+        <form action="">
+            <fieldset>
+                <legend>
+                    당신을 알려주세요!
+                </legend>
+                <label for="name">
+                    이름 :
+                    <input type="text" id="name" required="required" placeholder="your name">
+                    <span class="validity"></span>
+                </label><br><br>
+                <label for="email">
+                    이메일 :
+                    <input
+                        type="email"
+                        id="email"
+                        pattern=".+@.+\.com"
+                        size="30"
+                        placeholder="example@example.com"
+                        required="required">
+                </label><br><br>
+                <label for="bitrhday">
+                    생일 :
+                    <input type="date" id="bitrhday">
+                </label><br><br>
+                <label for="sns">
+                    SNS :
+                    <input type="url" id="sns" placeholder="https://www.instagram.com/">
+                </label><br><br>
+                <input type="submit" value="Submit">
+
+            </fieldset>
+        </form>
+    
+
+    <br>
+    그냥 해본 동그라미
+    <br>
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="30" stroke="pink" stroke-width="15" fill="skyblue"> 
+            inline SVG 지원 안되는 브라우저 ㅠ.ㅠ
+        </circle> 
+    </svg>
+    </body>
+
+</html>
