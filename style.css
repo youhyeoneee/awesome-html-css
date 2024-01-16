@@ -403,9 +403,12 @@ footer {
     align-items: center;
     gap: 24px;
     padding: 53px 0px 99px 0px;
+
+    position: relative;
+
 }
 
-footer div {
+.sns {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -425,4 +428,37 @@ footer div p {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.contact {
+    width: 165px;
+    height: 88px;
+    flex-shrink: 0;
+
+    border-radius: 50px;
+    border: 10px solid #BBD5F7;
+    background: linear-gradient(98deg, #BED3FF -10.83%, #D2F3E5 51.79%, #FFEBD9 110.76%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 60px;
+    right: 60px;
+    top: 34px;
+}
+
+.contact div {
+    text-align: center;
+}
+
+.contact div a {
+    color: rgba(64, 57, 48, 0.80);
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
 }
