@@ -27,21 +27,14 @@ div {
 .badge {
     /* 레이아웃 속성 */ 
     /* display: flex; */
-    padding: 12px 24px;
+    padding: 0px 24px;
     /* justify-content: center; */
     /* align-items: center; */
     /* gap: 10px; */
     border-radius: 10px;
     background: #E6EEFF;
-    width: fit-content;
-
-    /* 텍스트 속성 */ 
-    color: #000;
-    font-family: Pretendard;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%; /* 36px */
+    width: 100%;
+    height: 100px;
 
 }
 
@@ -127,7 +120,7 @@ header h1 b {
 
 .headerContainer {
     display: flex;
-    padding: 100px 50px;
+    padding: 50px 50px;
     flex-direction: column;
     gap: 10px;
 }
@@ -461,4 +454,46 @@ footer div p {
     font-weight: 700;
     line-height: normal;
     text-decoration: none;
+}
+
+.container {
+    color: #000;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.animation {
+    height: 50px;
+    overflow: hidden;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.animation > div > div {
+    padding: 10px 5px;
+    height: 50px;
+    margin-bottom: 50px;
+    display:inline-block;
+}
+
+main {
+    font-family: Pretendard;
+}
+.animation div:first-child {
+    animation: text-animation 8s infinite;
+}
+
+@keyframes text-animation {
+    0% {margin-top: -2px;}
+    10% {margin-top: -2px;}
+    20% {margin-top: -103px;}
+    30% {margin-top: -103px;}
+    40% {margin-top: -213px;}
+    60% {margin-top: -213px;}
+    70% {margin-top: -103px;}
+    80% {margin-top: -103px;}
+    90% {margin-top: -2px;}
+    100% {margin-top: -2px;}
 }
