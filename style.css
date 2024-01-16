@@ -394,3 +394,35 @@ header {
     letter-spacing: -0.96px;
     padding-left: 50px;
 }
+
+footer {
+    background: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 53px 0px 99px 0px;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+footer div img {
+    width: 30px;
+    height: 30px;
+}
+
+footer div p {
+    color: var(--Dark, #21243D);
+    text-align: center;
+    font-family: Heebo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
