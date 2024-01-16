@@ -1,0 +1,135 @@
+nav {
+    /* 레이아웃에 대한 스타일(5~10줄) */
+    display: flex;
+    align-items: center;
+
+    padding-left: 120px;
+    padding-right:120px;
+
+    gap: 40px;
+    height: 100px;
+}
+
+.navItem {
+    color: #403930;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 30px */
+}
+
+
+div {
+    text-transform: capitalize;
+}
+
+.badge {
+    /* 레이아웃 속성 */ 
+    /* display: flex; */
+    padding: 12px 24px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* gap: 10px; */
+    border-radius: 10px;
+    background: #E6EEFF;
+    width: fit-content;
+
+    /* 텍스트 속성 */ 
+    color: #000;
+    font-family: Pretendard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 36px */
+
+}
+
+header h1 {
+    color: #333;
+    font-family: Pretendard;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 80px */
+    letter-spacing: -1.28px;
+
+}
+
+header h1 b {
+    background: linear-gradient(99deg, #001F8F 3.58%, rgba(36, 255, 203, 0.50) 90.34%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Pretendard;
+}
+
+.headerLinkContainer {
+    display: flex;
+    gap: 16px;
+    /* flex-direction: row; */
+}
+
+.headerLink {
+    /* background-color: ; */
+    padding: 10px;
+    display: flex;
+    text-decoration: none;
+
+    width: 270px;
+    padding: 24px 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.blackBtn {
+    display: flex;
+    width: fit-content;
+    padding: 24px 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 16px;
+    background: #000;
+
+    /* 텍스트 속성*/
+    color: #E6EEFF;
+    font-family: Pretendard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 36px */
+}
+
+.whiteBtn {
+    display: flex;
+    width: fit-content;
+    padding: 24px 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 16px;
+    border: 4px solid #403930;
+
+    color: #403930;
+    font-family: Pretendard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 36px */
+}
+
+header {
+    display: flex;
+    width: 1366px;
+    height: 662px;
+    padding: 100px 120px;
+    flex-direction: column;
+    gap: 10px;
+}
