@@ -125,10 +125,34 @@ header h1 b {
     line-height: 150%; /* 36px */
 }
 
-header {
+.headerContainer {
     display: flex;
-    width: 100%;
     padding: 100px 120px;
     flex-direction: column;
     gap: 10px;
 }
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.profileImgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 355.624px;
+    flex-shrink: 0;
+    margin-right: 120px;
+}
+
+.profileImg {
+    border-radius: 160px;
+    width: 320px;
+    flex-shrink: 0;
+    border: 10px solid #BCF2F9;
+    background: url(/day1/images/me.jpeg), lightgray 50% / cover no-repeat;
+}
+
+
