@@ -155,4 +155,33 @@ header {
     background: url(/day1/images/me.jpeg), lightgray 50% / cover no-repeat;
 }
 
+.introduceContainer {
+    display: flex;
+    width: 100%;
+    padding: 100px 120px;
+    flex-direction: column;
+    gap: 10px;
+    background: linear-gradient(96deg, rgba(189, 210, 255, 0.40) 1.72%, rgba(116, 224, 215, 0.40) 158.93%);
+}
 
+.introduce1 {
+    color: #000;
+    font-family: Pretendard;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 50px */
+    letter-spacing: -0.8px;
+    
+}
+
+.introduce2 {
+    flex-shrink: 0;
+    align-self: stretch;
+    color: #333;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 30px */
+}
