@@ -438,8 +438,8 @@ footer {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    gap: 24px;
-    padding: 60px 24px;
+    gap: 16px;
+    padding: 40px 0px;
 }
 
 .sns {
