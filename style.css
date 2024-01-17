@@ -368,9 +368,6 @@ footer {
     align-items: center;
     gap: 24px;
     padding: 53px 0px 99px 0px;
-
-    position: relative;
-
 }
 
 .sns {
@@ -395,6 +392,9 @@ footer div p {
     line-height: normal;
 }
 
+body {
+    position: relative;
+}
 .contact {
     width: 165px;
     height: 88px;
@@ -408,10 +408,9 @@ footer div p {
     align-items: center;
     justify-content: center;
 
-    position: absolute;
-    bottom: 60px;
+    position: fixed;
     right: 60px;
-    top: 34px;
+    top: 550px;
 }
 
 .contact div {
