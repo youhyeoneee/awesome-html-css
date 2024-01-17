@@ -284,12 +284,12 @@ header {
     flex-shrink: 0;
     align-items: stretch;
     justify-content: center;
-    gap: 24px;
-    padding: 36px 48px;
+    padding: 24px 48px;
 }
 
-.projectImgContainer img{
-
+.projectImgContainer div{
+    display: flex;
+    align-items: center;
 }
 
 
