@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BGQ0LCCZVP"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-BGQ0LCCZVP');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>김유현</title>
@@ -40,8 +49,8 @@
             </div>
 
             <div class="headerLinkContainer">
-                <a class="headerLink blackBtn" href="https://github.com/" target="_blank">github link</a>
-                <a class="headerLink whiteBtn" href="#" target="_blank">resume link</a>
+                <a class="headerLink blackBtn" onclick="onClickButton('github')" href="https://github.com/" target="_blank">github link</a>
+                <a class="headerLink whiteBtn" onclick="onClickButton('resume')" href="#" target="_blank">resume link</a>
             </div>
         </div>
 
@@ -151,7 +160,7 @@
             <div>
                 <p>
                     긍정적인 에너지가 너무 좋은 동료였습니다. 
-                    다른 친구들보다 더 멀리, 많은 것을 볼 수 있는 역량을 지닌 뛰어난 친구입니다.  그와 함께 일하는 것을 추천합니다!
+                    다른 친구들보다 더 멀리, 많은 것을 볼 수 있는 역량을 지닌 뛰어난 친구입니다. 그와 함께 일하는 것을 추천합니다!
                 </p>
                 <h5>
                     ABC 프로젝트 팀원, 민수
@@ -190,6 +199,30 @@
         </div>
     
     </footer>
+
+    <script>
+        function onClickButton(type) {
+            if (type === 'github') {
+                // gtag("이벤트명", "액션명", {액션에 대한 상세 내용})
+                gtag("event", "깃허브_버튼_클릭",{
+                    'event_category': '깃허브_버튼_클릭',
+                    'event_label': '깃허브_버튼_클릭',
+                })
+
+                alert('깃허브로 이동합니다.')
+
+            }
+            else if (type === 'resume') {
+                gtag("event", "이력서_버튼_클릭", {
+                    'event_category': '이력서_버튼_클릭',
+                    'event_label': '이력서_버튼_클릭',
+                })
+
+                alert('이력서로 이동합니다.')
+
+            }
+        }
+    </script>
 </body>
 
 </html>
