@@ -315,6 +315,17 @@ main {
     line-height: 150%;
     /* 24px */
 }
+.projectLink {
+    display: flex;
+    gap: 12px;
+    color: #405BA1;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 30px */
+    text-decoration-line: underline;
+}
 
 .projectContainer {
     display: flex;
