@@ -190,10 +190,10 @@ header {
 }
 
 .logoContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 80px;
+	column-gap: 40px;
 }
 .logo {
     width: 100px;

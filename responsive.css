@@ -241,21 +241,19 @@ main {
 .techStackContent {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 24px;
 }
 
 .logoContainer {
-    display: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 8px;
+	column-gap: 24px;
 }
 
-.logoContainer2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-}
 .logo {
-    width: 70px;
+    width: 50px;
 }
 
 .projectsContainer {
