@@ -298,7 +298,7 @@ main {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    gap: 40px;
+    gap: 16px;
     align-self: stretch;
 
     border-radius: 16px;
@@ -316,6 +316,7 @@ main {
     /* 24px */
 }
 .projectLink {
+    padding-top: 24px;
     display: flex;
     gap: 12px;
     color: #405BA1;
@@ -330,7 +331,6 @@ main {
 .projectContainer {
     display: flex;
     flex-direction: column;
-    gap: 40px;
     align-items: flex-start;
     align-self: stretch;
     justify-content: center;
