@@ -455,7 +455,7 @@ footer div img {
     height: 30px;
 }
 
-footer div p {
+footer p {
     color: var(--Dark, #21243D);
     text-align: center;
     font-family: Heebo;
