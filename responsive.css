@@ -16,8 +16,9 @@ nav {
     font-family: Pretendard;
     font-size: 12px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 150%;
+    text-transform: uppercase;
     /* 18px */
 }
 
