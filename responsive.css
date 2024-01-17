@@ -337,11 +337,11 @@ main {
 }
 
 .projectImgContainer {
+    display: flex;
     height: 202.497px;
     flex-shrink: 0;
 
     border-radius: 24px;
-    background: #FFF;
     align-items: center;
 }
 
