@@ -121,7 +121,7 @@ header {
     width: 320px;
     flex-shrink: 0;
     border: 10px solid #BCF2F9;
-    background: url(/images/me.jpeg), lightgray 50% / cover no-repeat;
+    background: lightgray 50% / cover no-repeat;
 }
 
 .introduceContainer {
