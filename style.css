@@ -96,7 +96,6 @@ header h1 b {
 
 .headerContainer {
     display: flex;
-    padding: 50px 50px;
     flex-direction: column;
     gap: 40px;
 }
@@ -105,15 +104,16 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 160px;
+    padding: 100px 120px;
 }
 
 .profileImgContainer {
     display: flex;
-    justify-content: center;
+    justify-self: center;
     align-items: center;
     width: 355.624px;
     flex-shrink: 0;
-    margin-right: 120px;
 }
 
 .profileImg {
