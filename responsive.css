@@ -383,10 +383,10 @@ main {
 .feedbacks div {
     width: 240px;
     display: flex;
-    padding: 10px 39px;
+    padding: 24px 16px;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     gap: 10px;
 
     border-radius: 10px;
@@ -397,7 +397,7 @@ main {
 .feedbacks > div > p {
     color: #403930;
     font-family: Pretendard;
-    font-size: 14px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
@@ -419,8 +419,6 @@ main {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 0 20px;
-
 }
 
 .say {
