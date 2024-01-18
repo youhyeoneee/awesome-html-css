@@ -98,7 +98,7 @@ header h1 b {
     display: flex;
     padding: 50px 50px;
     flex-direction: column;
-    gap: 10px;
+    gap: 40px;
 }
 
 header {
