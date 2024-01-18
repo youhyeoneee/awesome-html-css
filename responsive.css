@@ -179,7 +179,6 @@ main {
     align-items: flex-start;
     align-self: stretch;
     background: linear-gradient(96deg, rgba(189, 210, 255, 0.40) 1.72%, rgba(116, 224, 215, 0.40) 158.93%);
-    gap: 10px;
 }
 
 .introduce1 {
@@ -196,7 +195,7 @@ main {
 .introduce2 {
     color: #333;
     font-family: Pretendard;
-    font-size: 13px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 300;
     line-height: 150%;
