@@ -314,6 +314,14 @@ main {
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
+
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    word-break: keep-all; 
     /* 24px */
 }
 .projectLink {
