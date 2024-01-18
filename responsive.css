@@ -431,7 +431,7 @@ main {
 .say div {
     color: #403930;
     font-family: Pretendard;
-    font-size: 24px;
+    font-size: 21px;
     font-style: normal;
     font-weight: 600;
     line-height: 125%;
@@ -443,7 +443,7 @@ main {
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    word-break: keep-all; 
+    word-break: break-all; 
 }
 
 footer {
