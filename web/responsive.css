@@ -19,6 +19,7 @@ nav {
     font-weight: 500;
     line-height: 150%;
     text-transform: uppercase;
+    text-decoration: none;
     /* 18px */
 }
 
@@ -523,3 +524,7 @@ footer p {
     color: grey;
     font-weight: 600;
 }
+
+html {
+    scroll-behavior: smooth;
+  }

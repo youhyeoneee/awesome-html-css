@@ -17,6 +17,8 @@ nav {
     font-style: normal;
     font-weight: 600;
     line-height: 150%; /* 30px */
+    text-decoration: none;
+    text-transform: capitalize;
 }
 
 
