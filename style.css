@@ -377,6 +377,14 @@ header {
     line-height: 125%; /* 60px */
     letter-spacing: -0.96px;
     padding-left: 50px;
+
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    word-break: keep-all; 
 }
 
 footer {
