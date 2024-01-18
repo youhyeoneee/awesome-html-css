@@ -277,7 +277,6 @@ main {
 }
 
 .projectsContainer {
-    display: flex;
     padding: 60px 24px;
 
     background: rgba(244, 244, 244, 0.50);
@@ -338,7 +337,7 @@ main {
     white-space: normal;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 6;
     -webkit-box-orient: vertical;
     word-break: keep-all; 
     /* 24px */
@@ -349,7 +348,6 @@ main {
     background-color: rgb(239, 239, 239);
     width: fit-content;
     border-radius: 4px;
-    white-space: pre;
 }
 
 .projectLink {
@@ -371,6 +369,7 @@ main {
     align-items: flex-start;
     align-self: stretch;
     justify-content: center;
+    width: 100%;
 }
 
 .projectImgContainer {
@@ -516,4 +515,11 @@ footer p {
 
 .companyImgContainer > div > img {
     height: 100px;
+}
+
+.period {
+    font-family: Pretendard;
+    font-size: 16px;
+    color: grey;
+    font-weight: 600;
 }

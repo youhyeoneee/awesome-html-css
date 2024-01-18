@@ -267,7 +267,13 @@ header {
     font-style: normal;
     font-weight: 500;
     line-height: 150%; /* 24px */
+    overflow: hidden;
     white-space: normal;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    
 }
 
 .projectText p {
@@ -275,7 +281,6 @@ header {
     background-color: rgb(239, 239, 239);
     width: fit-content;
     border-radius: 4px;
-    white-space: pre;
 }
 
 .projectLink {
@@ -297,7 +302,6 @@ header {
     gap: 10px;
     align-self: stretch;
     justify-content: center;
-    width: 400px;
 }
 
 .projectImgContainer {
@@ -516,8 +520,15 @@ main {
     align-items: center;
     justify-content: center;
     padding: 24px 48px;
-}
+} 
 
 .companyImgContainer > div > img {
     height: 150px;
+}
+
+.period {
+    font-family: Pretendard;
+    font-size: 16px;
+    color: grey;
+    font-weight: 600;
 }
