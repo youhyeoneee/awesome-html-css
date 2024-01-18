@@ -246,14 +246,20 @@ main {
 
 .logoContainer {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 2fr);
     row-gap: 8px;
 	column-gap: 24px;
     align-self: center;
 }
 
+@media screen and (min-width: 436px) {
+    .logoContainer {
+    grid-template-columns: repeat(5, 2fr);
+    }
+}
+
 .logo {
-    width: 50px;
+    width: 60px;
 }
 
 .projectsContainer {
