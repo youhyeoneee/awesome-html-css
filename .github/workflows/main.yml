@@ -24,5 +24,5 @@ jobs:
         run: |
           aws s3 sync web s3://yuhyeon-test-bucket/
 
-      - name: Invalidate cloudfront
-        run: aws cloudfront create-invalidation --distribution-id ${{ secrets.PORTFOLIO_CLOUDFRONT_ID }}--paths /* # Cloudfront ID로 변경
+      - name: Invalidate Cloudfront
+        run: aws cloudfront create-invalidation --distribution-id ${{ secrets.PORTFOLIO_CLOUDFRONT_ID }} --paths '/*' # Cloudfront ID로 변경
