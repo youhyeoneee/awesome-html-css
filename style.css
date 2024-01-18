@@ -104,8 +104,8 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 160px;
-    padding: 100px 120px;
+    gap: 80px;
+    padding: 100px 60px;
 }
 
 .profileImgContainer {
