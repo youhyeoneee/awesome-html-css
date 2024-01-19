@@ -103,3 +103,24 @@ body {
     -moz-osx-font-smoothing: grayscale;
     box-sizing: border-box
 }
+
+.articleTitle {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.articleText{
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+    word-wrap: break-word;
+    font-size: .875rem;
+    line-height: 1.5;
+    color: var(--text2);
+    margin: 0 0 1.5rem;
+}
