@@ -131,3 +131,12 @@ body {
         padding-right: 1rem;
     }
 }
+
+.card-img-top {
+    height: 10rem;
+    object-fit: cover;
+}
+
+.card-body {
+    height: 8rem;
+}
