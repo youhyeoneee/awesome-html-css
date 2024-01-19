@@ -124,3 +124,10 @@ body {
     color: var(--text2);
     margin: 0 0 1.5rem;
 }
+
+@media (max-width: 1024px) {
+    .headWrapper {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
