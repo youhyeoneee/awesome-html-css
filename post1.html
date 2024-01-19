@@ -108,43 +108,47 @@
                         <div class="card border-light">
                             <div class="card-body">
                                 <!-- Comment form-->
-                                <form class="mb-4"><textarea class="form-control" rows="3" placeholder="댓글을 작성하세요"></textarea></form>
+                                <form class="mb-4"><textarea id="comment" class="form-control" rows="3" placeholder="댓글을 작성하세요"></textarea></form>
                                 <div class="d-flex align-items-center justify-content-end">
-                                    <button type="button" class="btn btn-success fw-bold">댓글 작성</button>
+                                    <button id="comment_submit" type="submit" class="btn btn-success fw-bold">댓글 작성</button>
                                 </div>
-                                <!-- Comment with nested comments-->
-                                <div class="d-flex mb-4">
-                                    <!-- Parent comment-->
-                                    <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
-                                    <div class="ms-3">
-                                        <div class="fw-bold">냥피티</div>
-                                        좋은 내용 감사합니다 :)
-                                        <!-- Child comment 1-->
-                                        <div class="d-flex mt-4">
-                                            <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
-                                            <div class="ms-3">
-                                                <div class="fw-bold">지상 최강의 개발자 쥬니니</div>
-                                                감사합니다:)
+
+                                <div id="comments">
+                                    <!-- Comment with nested comments-->
+                                    <div class="d-flex mb-4">
+                                        <!-- Parent comment-->
+                                        <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
+                                        <div class="ms-3">
+                                            <div class="fw-bold">냥피티</div>
+                                            좋은 내용 감사합니다 :)
+                                            <!-- Child comment 1-->
+                                            <div class="d-flex mt-4">
+                                                <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
+                                                <div class="ms-3">
+                                                    <div class="fw-bold">지상 최강의 개발자 쥬니니</div>
+                                                    감사합니다:)
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Single comment-->
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
+                                        <div class="ms-3">
+                                            <div class="fw-bold">신명진</div>
+                                            하..하트가 어디 있더라?
+                                            <!-- Child comment 2-->
+                                            <div class="d-flex mt-4 mb-4">
+                                                <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
+                                                <div class="ms-3">
+                                                    <div class="fw-bold">지상 최강의 개발자 쥬니니</div>
+                                                    오 감사합니다
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Single comment-->
-                                <div class="d-flex">
-                                    <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
-                                    <div class="ms-3">
-                                        <div class="fw-bold">신명진</div>
-                                        하..하트가 어디 있더라?
-                                        <!-- Child comment 2-->
-                                        <div class="d-flex mt-4">
-                                            <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
-                                            <div class="ms-3">
-                                                <div class="fw-bold">지상 최강의 개발자 쥬니니</div>
-                                                오 감사합니다
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                             </div>
                         </div>
                     </section>
@@ -154,4 +158,5 @@
 </body>
 
 <script src="js/worldCloud.js"></script>
+<script src="js/comment.js"></script>
 </html>
