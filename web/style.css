@@ -538,3 +538,57 @@ main {
 html {
     scroll-behavior: smooth;
 }
+
+.projectsContainer {
+    display: flex;
+    padding: 80px 0px 120px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectsContainer h2 {
+    color: var(--Solid-Heading, #403930);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; /* 54.167% */
+}
+
+.projectGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 80px;
+	column-gap: 40px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project > div > h4 {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 92.857% */
+}
+.project div {
+    color: var(--dark-content, #666);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px; /* 144.444% */
+}
+
+.projectImg {
+    background: url(images/clickup.png),;
+}
