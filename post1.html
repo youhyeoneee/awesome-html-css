@@ -17,7 +17,8 @@
             rel="stylesheet"/>
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet"/>
-
+        <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
+        <script src="https://cdn.anychart.com/releases/v8/js/anychart-tag-cloud.min.js"></script>
     </head>
     <body>
         <div class="responsive_mainResponsive___uG64">
@@ -99,6 +100,92 @@
                 </p>
             </article>
         </div>
+
+        <div class="chart-area">
+            <div id="container" style="width:100%; height:100%;"></div>
+        </div>
+
+        <!-- Comments section-->
+        <section class="mb-5">
+            <div class="card border-light">
+                <div class="card-body">
+                    <!-- Comment form-->
+                    <form class="mb-4"><textarea class="form-control" rows="3" placeholder="댓글을 작성하세요"></textarea></form>
+                    <!-- Comment with nested comments-->
+                    <div class="d-flex mb-4">
+                        <!-- Parent comment-->
+                        <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
+                        <div class="ms-3">
+                            <div class="fw-bold">냥피티</div>
+                            좋은 내용 감사합니다 :)
+                            <!-- Child comment 1-->
+                            <div class="d-flex mt-4">
+                                <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
+                                <div class="ms-3">
+                                    <div class="fw-bold">지상 최강의 개발자 쥬니니</div>
+                                    감사합니다:)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single comment-->
+                    <div class="d-flex">
+                        <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
+                        <div class="ms-3">
+                            <div class="fw-bold">신명진</div>
+                            하..하트가 어디 있더라?
+                            <!-- Child comment 2-->
+                            <div class="d-flex mt-4">
+                                <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
+                                <div class="ms-3">
+                                    <div class="fw-bold">지상 최강의 개발자 쥬니니</div>
+                                    오 감사합니다
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 </body>
 
+<script>
+    anychart.onDocumentReady(function () {
+        var data = [
+            {
+                "x": "Docker",
+                "value": 590000000,
+                category: "Sino-Tibetan"
+            },
+            {
+                "x": "쥬니니",
+                "value": 283000000,
+                category: "Indo-European"
+            },
+            {
+                "x": "개발자",
+                "value": 544000000,
+                category: "Indo-European"
+            },
+            {
+                "x": "쿠버네티스",
+                "value": 527000000,
+                category: "Indo-European"
+            }, {
+                "x": "Dockerfile",
+                "value": 422000000,
+                category: "Afro-Asiatic"
+            }, {
+                "x": "도커",
+                "value": 620000000,
+                category: "Afro-Asiatic"
+            }
+        ];
+        var chart = anychart.tagCloud(data);
+        chart.angles([0]);
+        chart.container("container");
+        // chart.getCredits().setEnabled(false);
+        chart.draw();
+    });
+    </script>
 </html>
