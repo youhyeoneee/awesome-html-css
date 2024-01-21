@@ -1,4 +1,22 @@
-function makeComment(document, commentText) {
+var key = "comments";
+var comments = [];
+
+// 댓글 로드        
+function loadComments()
+{
+    // localStorage에서 불러오기
+    var jsonData = JSON.parse(localStorage.getItem(key));
+
+    for (var comment in jsonData) {
+        comments.push(jsonData[comment]);
+        makeComment(jsonData[comment]);
+    }
+}
+
+loadComments();
+
+
+function makeComment(commentText) {
     // 댓글을 추가할 부모 요소
     var commentsContainer = document.getElementById('comments');
 
@@ -44,7 +62,12 @@ document
             .getElementById('comment')
             .value;
         
-        makeComment(document, commentText);
+        // 댓글 생성 
+        makeComment(commentText);
+        
+        // localStorage 업데이트  
+        comments.push(commentText);
+        localStorage.setItem(key, JSON.stringify(comments));
 
         // 댓글 작성 후 텍스트 에어리어 내용 초기화
         document
